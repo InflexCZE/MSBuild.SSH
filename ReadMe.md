@@ -2,6 +2,9 @@
 Ever wanted to automatically deploy to a SFTP server or execute SSH command as part of your build to trigger an automatic update script, but couldn't cos vanilla MSBuild doesn't support that.
 Cry no more as this little lib got you covered!
 
+[![Version](https://img.shields.io/nuget/vpre/MSBuild.SSH.svg)](https://www.nuget.org/packages/MSBuild.SSH)
+[![NuGet download count](https://img.shields.io/nuget/dt/MSBuild.SSH.svg)](https://www.nuget.org/packages/MSBuild.SSH)
+
 ## How to use
 Just add latest [MSBuild.SSH](https://www.nuget.org/packages/MSBuild.SSH) to your `csproj` or `pubxml` and rock on!
 ```xml
