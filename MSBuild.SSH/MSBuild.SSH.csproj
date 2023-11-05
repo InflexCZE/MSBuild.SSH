@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyVersion>0.9.0.4</AssemblyVersion>
+    <FileVersion>$(AssemblyVersion)</FileVersion>
+    <Version>$(AssemblyVersion)</Version>
+    <Title>$(AssemblyName)</Title>
+
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Build.Framework" Version="17.7.2" CopyLocal="false" Publish="false" ExcludeAssets="runtime" PrivateAssets="All" />
+    <PackageReference Include="SSH.NET" Version="2023.0.0" CopyLocal="true" />
+  </ItemGroup>
+  
+  <PropertyGroup>
+    <!-- Suppresses the warnings about the package not having assemblies in lib/*/.dll.-->
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+
+    <!-- Change the default location where NuGet will put the build output -->
+    <BuildOutputTargetFolder>tasks</BuildOutputTargetFolder>
+  </PropertyGroup>
+
+  <Target Name="PackTaskDependencies" BeforeTargets="GenerateNuspec">
+    <ItemGroup>
+      <!-- pack the props files -->
+      <_PackageFiles Include="Properties\MSBuild.SSH.props" PackagePath="build\" />
+
+      <!-- pack the dependency libs into the packges -->
+      <!-- this is not correct but idk how to do it better -->
+      <_PackageFiles Include="$(OutDir)\*.dll" Exclude="**\$(AssemblyName).dll" PackagePath="tasks\netstandard2.0" />
+    </ItemGroup>
+  </Target>
+  
+</Project>

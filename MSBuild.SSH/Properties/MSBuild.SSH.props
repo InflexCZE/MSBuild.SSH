@@ -1,0 +1,13 @@
+<Project TreatAsLocalProperty="Assembly">
+
+  <PropertyGroup>
+    <Assembly>$(MSBuildThisFileDirectory)..\tasks\netstandard2.0\MSBuild.SSH.dll</Assembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SSH.NET" Version="2023.0.0" CopyLocal="false" Publish="false" ExcludeAssets="runtime" PrivateAssets="All" />
+  </ItemGroup>
+
+  <UsingTask TaskName="MSBuild.SSH.UploadFileTask" AssemblyFile="$(Assembly)"/>
+  <UsingTask TaskName="MSBuild.SSH.SSHCommandTask" AssemblyFile="$(Assembly)"/>
+</Project>

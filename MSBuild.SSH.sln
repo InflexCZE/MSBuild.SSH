@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSBuild.SSH", "MSBuild.SSH\MSBuild.SSH.csproj", "{00C1BEC4-568E-458A-A5BE-3E68CF5584E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSBuild.SSH.Tests", "MSBuild.SSH.Tests\MSBuild.SSH.Tests.csproj", "{7DD7FC0C-CAAD-4055-BAA1-694A3EA1D8BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00C1BEC4-568E-458A-A5BE-3E68CF5584E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00C1BEC4-568E-458A-A5BE-3E68CF5584E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00C1BEC4-568E-458A-A5BE-3E68CF5584E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00C1BEC4-568E-458A-A5BE-3E68CF5584E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DD7FC0C-CAAD-4055-BAA1-694A3EA1D8BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DD7FC0C-CAAD-4055-BAA1-694A3EA1D8BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DD7FC0C-CAAD-4055-BAA1-694A3EA1D8BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DD7FC0C-CAAD-4055-BAA1-694A3EA1D8BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A231CA6-EB6D-4135-BB5E-0E4328CAA292}
+	EndGlobalSection
+EndGlobal
