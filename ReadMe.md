@@ -53,6 +53,7 @@ As the name suggest, [SSH](https://en.wikipedia.org/wiki/Secure_Shell) (Secure S
 ## Debugging
 All tasks automatically log excecution progress to MSBuild output.
 By default, only important progress info and errors are printed, but additional details be be obtained by increasing logging verbosity
+
 https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-command-line-reference#switches
 https://stackoverflow.com/questions/1211841/how-can-i-make-visual-studios-build-be-very-verbose
 
