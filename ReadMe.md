@@ -14,7 +14,7 @@ Just add latest [MSBuild.SSH](https://www.nuget.org/packages/MSBuild.SSH) to you
 ## Available tasks
 ### UploadFileTask
 This task uploads specified file(s) to the target directory on the server.
-The files are takes as is, no nesting or directory structure is considered, uploads flat to the UploadDirectory.
+The files are taken as is, no nesting or directory structure is considered, uploads flat to the `UploadDirectory`.
 
 ```xml
 <UploadFileTask
